@@ -6,17 +6,17 @@ import { FaYoutube } from "react-icons/fa";
 
 function Menu() {
   return (
-    <nav className="h-[2.7rem] bg-[#1b1b1e60] px-40 flex justify-between shadow-2xl relative z-50">
+    <nav className="h-[2.7rem] bg-[#1b1b1e60] px-48 flex justify-between shadow-2xl relative z-50">
       <div className="flex items-center h-full ">
         <ul className="flex gap-8 text-[.72rem]">
-          <li>EXPLORAR</li>
+          <li className="font-montserrat">EXPLORAR</li>
           <li>REVIEWS</li>
           <li>SOBRE MI</li>
           <li>BUSCAR</li>
         </ul>
       </div>
 
-      <div className="flex items-center h-full text-[1.35rem] gap-6 ">
+      <div className="flex items-center h-full text-[1.35rem] gap-5 ">
         <FaFacebookF />
         <FaLinkedin />
         <RiInstagramFill />

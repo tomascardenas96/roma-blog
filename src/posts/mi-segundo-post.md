@@ -1,5 +1,5 @@
 ---
-title: "Cómo mejorar el rendimiento en React"
+title: "Gestionar proyectos utilizando la metodologia SCRUM en Jira"
 date: "2025-02-21"
 author: "Juan Pérez"
 ---

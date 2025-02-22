@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className="w-full h-20 bg-foreground px-44 flex flex-row items-center justify-between ">
+    <header className="w-full h-20 bg-foreground px-48 flex flex-row items-center justify-between ">
       <Link href="/">
         <Image
           src={Logo}
@@ -16,7 +16,7 @@ function Header() {
           className="cursor-pointer"
         />
       </Link>
-      <p className="text-black flex items-center gap-1 cursor-pointer">
+      <p className="text-black flex items-center gap-1 cursor-pointer text-sm">
         Login
         <CiUser />
       </p>
