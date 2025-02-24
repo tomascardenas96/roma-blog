@@ -4,27 +4,21 @@ import SecondarySection from "./SecondarySection";
 import TertiarySection from "./TertiarySection";
 
 function MainPage({ posts }) {
-  const firstPost = posts[0];
-  const secondPost = posts[1];
-  const thirdPost = posts[2];
-  const fourthPost = posts[3];
-  const fifthPost = posts[4];
-  const sixthPost = posts[5];
-  const seventhPost = posts[6];
+  const mainPosts = posts.slice(0, 7);
 
   return (
-    <div className="h-[100svh] bg-foreground px-48 pt-6 pb-16 grid gap-16 grid-cols-2 ">
+    <div className="bg-foreground px-48 pt-10 pb-16 grid gap-16 grid-cols-2">
       <section className="grid grid-rows-[5fr_3fr] ">
-        <MainPost firstPost={firstPost} />
-        <TertiarySection sixthPost={sixthPost} seventhPost={seventhPost} />
+        <MainPost firstPost={mainPosts[0]} />
+        <TertiarySection sixthPost={mainPosts[5]} seventhPost={mainPosts[6]} />
       </section>
 
-      <section className="grid grid-rows-[5fr_3fr] ">
+      <section className="grid grid-rows-[5fr_3fr]">
         <SecondarySection
-          secondPost={secondPost}
-          thirdPost={thirdPost}
-          fourthPost={fourthPost}
-          fifthPost={fifthPost}
+          secondPost={mainPosts[1]}
+          thirdPost={mainPosts[2]}
+          fourthPost={mainPosts[3]}
+          fifthPost={mainPosts[4]}
         />
         <NewsLetter />
       </section>

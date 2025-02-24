@@ -13,6 +13,10 @@ export default {
         textColor: "var(--text-color)",
         borderColor: "var(--border-color)",
       },
+      screens: {
+        "2xl": "1400px",
+        "3xl": "1560px",
+      },
     },
   },
   plugins: [],

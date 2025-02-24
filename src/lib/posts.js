@@ -7,7 +7,7 @@ const postsDir = path.join(process.cwd(), "src/posts");
 export const getAllPosts = () => {
   const fileNames = fs.readdirSync(postsDir);
 
-  return fileNames.map((fileName) => {
+  const posts = fileNames.map((fileName) => {
     const slug = fileName.replace(/\.md$/, "");
     const filePath = path.join(postsDir, fileName);
     const fileContents = fs.readFileSync(filePath, "utf8");
@@ -19,4 +19,8 @@ export const getAllPosts = () => {
       ...data,
     };
   });
+
+  return posts.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 };

@@ -6,7 +6,7 @@ import { FaYoutube } from "react-icons/fa";
 
 function Menu() {
   return (
-    <nav className="h-[2.7rem] bg-[#1b1b1e60] px-48 flex justify-between shadow-2xl relative z-50">
+    <nav className="h-[2.5rem] bg-gradient-to-t from-[#1b1b1e64] via-[#1b1b1e42] to-[#1b1b1e64] px-48 flex justify-between shadow-2xl relative z-50 rounded-md">
       <div className="flex items-center h-full ">
         <ul className="flex gap-8 text-[.72rem]">
           <li className="font-montserrat">EXPLORAR</li>

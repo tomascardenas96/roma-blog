@@ -1,7 +1,8 @@
 ---
 title: "Gestionar proyectos utilizando la metodologia SCRUM en Jira"
-date: "2025-02-21"
+date: "01-17-2025"
 author: "Juan Pérez"
+image: "/images/posts/Jira-for-scrum.png"
 ---
 
 # Cómo mejorar el rendimiento en React 🚀
